@@ -6,35 +6,71 @@
       html,
     	body {
     		display: flex;
-            overflow: hidden;
             width: 100vw;
     		height: 100vh;
     		padding: 0;
     		margin: 0;	
             background-color:#232323;
+            overflow-x: hidden;
+            flex-direction: column;
         }
-    	h1 
+        div, p, h1, h2, h3
+        {
+            display: inline-block;
+            flex-flow: row wrap;
+            align-self: center;
+            text-align:center;
+            margin:0;
+            padding: 0;
+            font-size: 5vw;
+            width: 100vw;
+        } 
+    	h1, h2, h3, a
     	{
-    		font-size: 16vw; 
-    		display: inline-flex; 
+            font-family: monospace;
+    		display: flex; 
     		float: none; 
     		margin: 0 auto;
-    		width: auto;
-    		align-self: center;
-            text-align:center;
+    	
             color:#fefefe;
     	}
-    </style>
+        a {
+            display: inline-block;
+        }
+        h1 {
+            font-size: 15vw;
+        }
+        h3, a, ul. li {
+            font-size: 2vw;
+        }
+        ul, li {
+            display: block;
+            width: 98vw;
+            flex-direction: row;
+            list-style: none;
+        }
+        li {
+            display: block;
+            margin: auto;
+        }
+        .boob {
+            align-items: center;
+            flex-direction: row;
+            margin: auto;
+        }
+        </style>
 </head>
     <body>
-    <h1>💰 💥</h1>
-    <br>
+        <div class="boob">
+    <h1>💥</h1>
+    
+    
     <h3>COLLECTIONS</h3>
-    <ul>
-        <li><a href="https://rarible.com/rischko/" target="_blank">OPENSEA</li>
-        <li><a href="https://rarible.com/rischko/" target="_blank">RARIBLE</a></li>
-        <li>80BRRRRR</li>
-        <li>X</li>
+        <ul>
+        <li><a href="https://opensea.io/rischko/" target="_blank">RISCHKO@OPENSEA</a></li>
+        <li><a href="https://rarible.com/collection/0x002dee5d6bf790cdce2db53dc31fa68bcd985c2b/items" target="_blank">80BRRRR @RARIBLE</a></li>
+        <li><a href="https://x.com/rischko/" target="_blank">X</a>&nbsp;<a href="https://instagram.com/quickmultiball/" target="_blank">IG</a></li>
     </ul>
+    </div>
     </body>
 </html>
